@@ -1,18 +1,352 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#102e31"><meta name="description" content="Floodsafe explores how geographic data and population estimates can support flood-aware evacuation planning. A campus prototype in Udaipur, with a vision for Alappuzha."><title>Floodsafe — Understand exposure. Plan with care.</title><link rel="stylesheet" href="style.css"><link rel="icon" href="icon.svg" type="image/svg+xml"></head>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102e31">
+    <meta name="description"
+        content="Floodsafe explores how geographic data and population estimates can support flood-aware evacuation planning. A campus prototype in Udaipur, with a vision for Alappuzha.">
+    <title>Floodsafe — Understand exposure. Plan with care.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+</head>
+
 <body><a class="skip" href="#main">Skip to content</a>
-<header><a class="brand" href="#" aria-label="Floodsafe home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 29 9v14l-13 7L3 23V9Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 17q5-6 10 0t10 0M6 22q5-6 10 0t10 0" fill="none" stroke="currentColor" stroke-width="2"/></svg>floodsafe<span class="brand-dot">.</span></a><nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#workflow">How it works</a><a href="#vision">Our vision</a><a class="nav-cta" href="#prototype">Explore the prototype <span>↗</span></a></nav></header>
-<main id="main">
-<section class="hero"><div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> GIS RESEARCH & EVACUATION PLANNING</p><h1>Understand exposure.<br>Plan with <em>care.</em></h1><p class="intro">Every evacuation plan begins with a question: <strong>how many people could need help?</strong> Floodsafe brings geographic boundaries and population estimates into one clearer picture.</p><div class="actions"><a class="button" href="#workflow">See how it works <span>↓</span></a><a class="text-link" href="#vision">Explore our vision ↗</a></div><p class="hero-note"><span class="status-dot"></span> Early-stage prototype · Built for learning, designed for impact</p></div>
-<div class="map-scene"><div class="map-top"><span><i class="status-dot"></i> SPATIAL EXPLORER</span><span>ILLUSTRATIVE VIEW</span></div><svg class="terrain" viewBox="0 0 600 500" role="img" aria-labelledby="map-title map-desc"><title id="map-title">Illustration of a geographic area divided into hexagonal cells</title><desc id="map-desc">A stylized river flows through an area of roads, buildings, and hexagons. This conceptual illustration is not a real map or population estimate.</desc><defs><pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#ceded5" stroke-width=".6"/></pattern><pattern id="hex" width="66" height="114.3" patternUnits="userSpaceOnUse"><polygon points="33,0 66,19.05 66,57.150000000000006 33,76.2 0,57.150000000000006 0,19.05" fill="#3e9d7860" stroke="#4e9477" stroke-width="1"/><polygon points="0,-57.150000000000006 33,-38.1 33,0 0,19.05 -33,0 -33,-38.1" fill="#3e9d7860" stroke="#4e9477" stroke-width="1"/><polygon points="66,-57.150000000000006 99,-38.1 99,0 66,19.05 33,0 33,-38.1" fill="#3e9d7860" stroke="#4e9477" stroke-width="1"/><polygon points="0,57.15 33,76.2 33,114.3 0,133.35 -33,114.3 -33,76.2" fill="#3e9d7860" stroke="#4e9477" stroke-width="1"/><polygon points="66,57.15 99,76.2 99,114.3 66,133.35 33,114.3 33,76.2" fill="#3e9d7860" stroke="#4e9477" stroke-width="1"/></pattern><filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity=".12"/></filter></defs><rect width="600" height="500" fill="#e6eee5"/><rect width="600" height="500" fill="url(#grid)"/><g fill="none" stroke="#c5d5c6"><path d="M-40 60Q120-60 270 90T650 80M-40 80Q120-40 270 110T650 100M-40 100Q120-20 270 130T650 120M-30 410Q150 270 320 390T650 430M-30 430Q150 290 320 410T650 450M-30 450Q150 310 320 430T650 470"/></g><path d="M380-40C220 90 490 120 380 250S270 340 410 540" stroke="#a6cdd0" stroke-width="70" fill="none"/><path d="M380-40C220 90 490 120 380 250S270 340 410 540" stroke="#bddbdd" stroke-width="42" fill="none"/><g stroke="#fffdf5" stroke-width="11" fill="none"><path d="M-20 320 620 170M130-20 250 530M-20 120 600 430"/></g><g stroke="#c6c7b7" stroke-width="1.2" fill="none"><path d="M-20 320 620 170M130-20 250 530M-20 120 600 430"/></g><g fill="#c8cec0" stroke="#f6f6ee" stroke-width="3"><path d="m75 166 44-10 9 35-44 10ZM150 199l39-8 7 28-39 8ZM90 224l38-8 8 31-38 8ZM222 143l48-10 8 34-48 10ZM225 330l44-10 9 35-44 10ZM460 284l35-10 13 40-35 10ZM485 330l30-10 10 32-30 10ZM70 344l54-15 10 36-54 15Z"/></g><path d="m80 150 166-49 110 84-32 157-162 43-99-107Z" fill="url(#hex)" stroke="#26745b" stroke-width="2" stroke-dasharray="7 5"/><g fill="#1d6853"><circle cx="133" cy="199" r="3"/><circle cx="143" cy="204" r="3"/><circle cx="155" cy="199" r="3"/><circle cx="193" cy="244" r="3"/><circle cx="205" cy="239" r="3"/><circle cx="212" cy="250" r="3"/><circle cx="232" cy="181" r="3"/><circle cx="241" cy="192" r="3"/><circle cx="257" cy="185" r="3"/><circle cx="173" cy="302" r="3"/><circle cx="189" cy="309" r="3"/><circle cx="200" cy="298" r="3"/><circle cx="266" cy="278" r="3"/><circle cx="279" cy="286" r="3"/></g><g filter="url(#shadow)"><rect x="342" y="325" width="218" height="83" rx="9" fill="#fffef8"/><text x="360" y="351" fill="#718079" font-size="10" font-family="sans-serif" letter-spacing="1">FROM BOUNDARY TO INSIGHT</text><text x="360" y="377" fill="#183d35" font-size="17" font-family="sans-serif">Smaller cells. Clearer context.</text><text x="360" y="395" fill="#718079" font-size="10" font-family="sans-serif">H3 spatial indexing · Concept illustration</text></g><g fill="#294e44" font-family="sans-serif" font-size="12"><text x="42" y="62">N ↑</text><text x="43" y="466">SELECTED AREA</text></g></svg><div class="map-bottom"><span><b class="key-hex"></b> Analysis boundary</span><span><b class="key-dot"></b> Illustrative population</span></div></div></section>
-<div class="context-strip"><span>THE STARTING POINT <strong>Udaipur, Rajasthan</strong></span><span>THE METHOD <strong>Geography + population data</strong></span><span>THE LONGER-TERM VISION <strong>Alappuzha, Kerala</strong></span></div>
-<section id="overview" class="section overview"><div><p class="eyebrow">01 / THE CHALLENGE</p><h2>A boundary on a map.<br>A community behind it.</h2></div><div class="section-copy"><p>Flood planning needs more than a location. It needs an understanding of the people within it. Floodsafe explores how GIS and population data can make that first step easier.</p><p>The current prototype lets a user select an area, divide it into H3 hexagons, estimate its population, and export the results. It establishes a foundation for future flood-exposure analysis and evacuation planning.</p><div class="inline-note"><span>↗</span><p><strong>Our aim</strong><br>Help planners understand potential evacuation demand before connecting that demand to routes, shelters, and resources.</p></div></div></section>
-<section id="workflow" class="section workflow"><div class="section-heading"><div><p class="eyebrow">02 / THE CURRENT WORKFLOW</p><h2>From a place to a<br>population estimate.</h2></div><p>Six steps turn a selected geographic area into structured, exportable spatial data.</p></div><ol class="steps"><li><span>01</span><h3>Find a place</h3><p>Search for a location and navigate to the relevant area on an interactive map.</p></li><li><span>02</span><h3>Draw a boundary</h3><p>Select a polygon or rectangle around the campus, neighborhood, or area of interest.</p></li><li><span>03</span><h3>Divide into hexagons</h3><p>Use H3 spatial indexing to organize the selected area into smaller analysis cells.</p></li><li><span>04</span><h3>Estimate population</h3><p>Use population-density data. WorldPop retrieval is intended; an assumed demo density provides an offline fallback.</p></li><li><span>05</span><h3>Explore the map</h3><p>Visualize estimated distribution. Population markers are illustrative, not individual people’s locations.</p></li><li><span>06</span><h3>Export the results</h3><p>Review the results table and download a CSV for further analysis and comparison.</p></li></ol><div class="hex-explainer"><span class="hex-symbol">⬡</span><div><h3>Why hexagons?</h3><p>A single total hides local differences. H3 cells give each small area a spatial identity, helping organize estimates and creating a common grid for future flood-exposure comparisons.</p></div><span class="mono">H3 / SPATIAL INDEX</span></div></section>
-<section id="vision" class="section geography"><div class="section-heading"><div><p class="eyebrow">03 / WHERE WE’RE HEADING</p><h2>Start local.<br>Build toward greater scale.</h2></div><p>A campus provides a manageable testing ground. The long-term ambition is to bring these ideas to flood-prone communities.</p></div><div class="locations"><article class="location"><div class="location-top"><span class="pill">CURRENT TESTING CONTEXT</span><span>01</span></div><h3>Udaipur<span>Rajasthan, India</span></h3><p>A selected campus area is the starting point for testing geographic selection, spatial segmentation, population estimation, and map visualization.</p><div class="location-foot">Focus <strong>Validate the foundation</strong></div></article><article class="location future"><div class="location-top"><span class="pill">LONGER-TERM TARGET</span><span>02</span></div><h3>Alappuzha<span>Kerala, India</span></h3><p>A proposed setting for future flood-aware planning, bringing population estimates together with local hazard data, accessible roads, and shelter capacity.</p><div class="location-foot">Next horizon <strong>Connect exposure to action</strong></div></article></div></section>
-<section id="simulation" class="section media-section"><div><p class="eyebrow">04 / SEE THE VISION</p><h2>A closer look at<br>the planned experience.</h2><p>The simulation will illustrate the proposed evacuation-planning workflow, from understanding exposure to coordinating assistance.</p></div><div class="placeholder"><span class="play-icon" aria-hidden="true">▷</span><h3>Simulation film</h3><p>Video will be added here.</p><span class="pill">COMING LATER</span></div></section>
-<section id="architecture" class="section architecture"><div class="section-heading"><div><p class="eyebrow">05 / THE SYSTEM VISION</p><h2>Better context.<br>More informed decisions.</h2></div><p>The architecture extends beyond today’s population prototype. These capabilities are proposed and require implementation and validation.</p></div><div class="architecture-flow"><article><span class="arch-num">INPUTS</span><h3>Understand the terrain</h3><p>Population grids, roads, shelters, elevation, historical inundation, rainfall, and water-level observations.</p><ul><li>Geographic and population data</li><li>Weather and terrain context</li></ul></article><article><span class="arch-num">ANALYSIS</span><h3>Evaluate the options</h3><p>Combine flood-exposure modeling with route accessibility and shelter-capacity allocation.</p><ul><li>Risk-aware route evaluation</li><li>Capacity-aware allocation</li></ul></article><article><span class="arch-num">COORDINATION</span><h3>Support human action</h3><p>Present suggested routes and rescue priorities to decision-makers, with human authorization for public alerts.</p><ul><li>Command-center decision support</li><li>Human-approved communication</li></ul></article></div><details><summary>Explore the proposed architecture <span>+</span></summary><div class="architecture-detail"><div><h3>Forecast and spatial context</h3><p>The design proposes weather ingestion, elevation and historical inundation data, and an ML model such as XGBoost. PostgreSQL with PostGIS would hold roads, shelter locations, and spatial data.</p></div><div><h3>Routing and allocation</h3><p>The proposed engine would penalize risky routes, exclude inaccessible roads, allocate shelter capacity, and place stranded locations into a rescue queue. Routing rules and thresholds would need local validation.</p></div><div><h3>Communication and oversight</h3><p>The written architecture proposes geofenced CAP messages for cell broadcast, explicitly authorized by a human official. Shelter updates and field reports would inform the planning view.</p></div><p class="detail-note">Design note: the supplied diagram shows an earlier SMS delivery concept. This overview follows the written architecture’s later cell-broadcast proposal. Neither communication system is represented as operational.</p></div></details></section>
-<section id="prototype" class="prototype-section section"><div><p class="eyebrow">06 / EXPLORE THE FOUNDATION</p><h2>The population<br>prototype.</h2><p>Select a boundary. Examine spatial estimates. Export the result. The prototype focuses on making population data easier to explore.</p><div class="tags"><span>Python</span><span>Streamlit</span><span>Folium</span><span>H3</span><span>Shapely</span><span>Pandas</span><span>GeoPy / OSM</span></div></div><div class="prototype-placeholder"><span class="window-dots" aria-hidden="true">● ● ●</span><div class="terminal-symbol" aria-hidden="true">⌘</div><h3>A space for the interactive prototype</h3><p>The application connection will be added here. This page does not run the population estimator yet.</p><span class="pill">CONNECTION PENDING</span></div></section>
-<section id="roadmap" class="section roadmap"><div><p class="eyebrow">07 / WHAT COMES NEXT</p><h2>A foundation,<br>with a clear next chapter.</h2></div><div class="roadmap-list"><article><span>01</span><div><h3>Validate the population pipeline</h3><p>Test live WorldPop retrieval, evaluate coverage and resolution, and distinguish measured inputs from demo assumptions.</p></div></article><article><span>02</span><div><h3>Add flood-exposure context</h3><p>Integrate hazard maps, elevation, rainfall, and water-level information to explore which areas may be affected.</p></div></article><article><span>03</span><div><h3>Connect routes and shelter capacity</h3><p>Investigate road-network accessibility, shelter availability, and allocation constraints using validated local data.</p></div></article><article><span>04</span><div><h3>Evaluate with people on the ground</h3><p>Assess the system with relevant stakeholders before considering real-world disaster-management use.</p></div></article></div></section>
-<aside class="limitations"><span class="eyebrow">RESEARCH STATUS</span><h3>Promising direction. Important limits.</h3><p>Floodsafe is an early-stage prototype, not a validated operational evacuation system. Estimates depend on data quality, coverage, and resolution. Offline mode uses assumed density. There is no validated flood-depth prediction, real-time forecasting, verified evacuation routing, or live tracking of evacuees. The live WorldPop integration still needs testing.</p></aside>
-</main><footer><a class="brand" href="#">floodsafe<span class="brand-dot">.</span></a><p>Geographic insight. A foundation for safer planning.</p><a href="#main">Back to top ↑</a></footer>
-<script src="app.js"></script></body></html>
+    <header><a class="brand" href="#" aria-label="Floodsafe home"><svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M16 2 29 9v14l-13 7L3 23V9Z" fill="none" stroke="currentColor" stroke-width="2" />
+                <path d="M6 17q5-6 10 0t10 0M6 22q5-6 10 0t10 0" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>floodsafe<span class="brand-dot">.</span></a>
+        <nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#workflow">How it works</a><a
+                href="#vision">Our vision</a><a class="nav-cta" href="#prototype">Explore the prototype
+                <span>↗</span></a></nav>
+    </header>
+    <main id="main">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> GIS RESEARCH & EVACUATION PLANNING</p>
+                <h1>Understand exposure.<br>Plan with <em>care.</em></h1>
+                <p class="intro">Every evacuation plan begins with a question: <strong>how many people could need
+                        help?</strong> Floodsafe brings geographic boundaries and population estimates into one clearer
+                    picture.</p>
+                <div class="actions"><a class="button" href="#workflow">See how it works <span>↓</span></a><a
+                        class="text-link" href="#vision">Explore our vision ↗</a></div>
+                <p class="hero-note"><span class="status-dot"></span> Early-stage prototype · Built for learning,
+                    designed for impact</p>
+            </div>
+            <div class="map-scene">
+                <div class="map-top"><span><i class="status-dot"></i> SPATIAL EXPLORER</span><span>ILLUSTRATIVE
+                        VIEW</span></div><svg class="terrain" viewBox="0 0 600 500" role="img"
+                    aria-labelledby="map-title map-desc">
+                    <title id="map-title">Illustration of a geographic area divided into hexagonal cells</title>
+                    <desc id="map-desc">A stylized river flows through an area of roads, buildings, and hexagons. This
+                        conceptual illustration is not a real map or population estimate.</desc>
+                    <defs>
+                        <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+                            <path d="M36 0H0V36" fill="none" stroke="#ceded5" stroke-width=".6" />
+                        </pattern>
+                        <pattern id="hex" width="66" height="114.3" patternUnits="userSpaceOnUse">
+                            <polygon points="33,0 66,19.05 66,57.150000000000006 33,76.2 0,57.150000000000006 0,19.05"
+                                fill="#3e9d7860" stroke="#4e9477" stroke-width="1" />
+                            <polygon points="0,-57.150000000000006 33,-38.1 33,0 0,19.05 -33,0 -33,-38.1"
+                                fill="#3e9d7860" stroke="#4e9477" stroke-width="1" />
+                            <polygon points="66,-57.150000000000006 99,-38.1 99,0 66,19.05 33,0 33,-38.1"
+                                fill="#3e9d7860" stroke="#4e9477" stroke-width="1" />
+                            <polygon points="0,57.15 33,76.2 33,114.3 0,133.35 -33,114.3 -33,76.2" fill="#3e9d7860"
+                                stroke="#4e9477" stroke-width="1" />
+                            <polygon points="66,57.15 99,76.2 99,114.3 66,133.35 33,114.3 33,76.2" fill="#3e9d7860"
+                                stroke="#4e9477" stroke-width="1" />
+                        </pattern>
+                        <filter id="shadow">
+                            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity=".12" />
+                        </filter>
+                    </defs>
+                    <rect width="600" height="500" fill="#e6eee5" />
+                    <rect width="600" height="500" fill="url(#grid)" />
+                    <g fill="none" stroke="#c5d5c6">
+                        <path
+                            d="M-40 60Q120-60 270 90T650 80M-40 80Q120-40 270 110T650 100M-40 100Q120-20 270 130T650 120M-30 410Q150 270 320 390T650 430M-30 430Q150 290 320 410T650 450M-30 450Q150 310 320 430T650 470" />
+                    </g>
+                    <path d="M380-40C220 90 490 120 380 250S270 340 410 540" stroke="#a6cdd0" stroke-width="70"
+                        fill="none" />
+                    <path d="M380-40C220 90 490 120 380 250S270 340 410 540" stroke="#bddbdd" stroke-width="42"
+                        fill="none" />
+                    <g stroke="#fffdf5" stroke-width="11" fill="none">
+                        <path d="M-20 320 620 170M130-20 250 530M-20 120 600 430" />
+                    </g>
+                    <g stroke="#c6c7b7" stroke-width="1.2" fill="none">
+                        <path d="M-20 320 620 170M130-20 250 530M-20 120 600 430" />
+                    </g>
+                    <g fill="#c8cec0" stroke="#f6f6ee" stroke-width="3">
+                        <path
+                            d="m75 166 44-10 9 35-44 10ZM150 199l39-8 7 28-39 8ZM90 224l38-8 8 31-38 8ZM222 143l48-10 8 34-48 10ZM225 330l44-10 9 35-44 10ZM460 284l35-10 13 40-35 10ZM485 330l30-10 10 32-30 10ZM70 344l54-15 10 36-54 15Z" />
+                    </g>
+                    <path d="m80 150 166-49 110 84-32 157-162 43-99-107Z" fill="url(#hex)" stroke="#26745b"
+                        stroke-width="2" stroke-dasharray="7 5" />
+                    <g fill="#1d6853">
+                        <circle cx="133" cy="199" r="3" />
+                        <circle cx="143" cy="204" r="3" />
+                        <circle cx="155" cy="199" r="3" />
+                        <circle cx="193" cy="244" r="3" />
+                        <circle cx="205" cy="239" r="3" />
+                        <circle cx="212" cy="250" r="3" />
+                        <circle cx="232" cy="181" r="3" />
+                        <circle cx="241" cy="192" r="3" />
+                        <circle cx="257" cy="185" r="3" />
+                        <circle cx="173" cy="302" r="3" />
+                        <circle cx="189" cy="309" r="3" />
+                        <circle cx="200" cy="298" r="3" />
+                        <circle cx="266" cy="278" r="3" />
+                        <circle cx="279" cy="286" r="3" />
+                    </g>
+                    <g filter="url(#shadow)">
+                        <rect x="342" y="325" width="218" height="83" rx="9" fill="#fffef8" /><text x="360" y="351"
+                            fill="#718079" font-size="10" font-family="sans-serif" letter-spacing="1">FROM BOUNDARY TO
+                            INSIGHT</text><text x="360" y="377" fill="#183d35" font-size="17"
+                            font-family="sans-serif">Smaller cells. Clearer context.</text><text x="360" y="395"
+                            fill="#718079" font-size="10" font-family="sans-serif">H3 spatial indexing · Concept
+                            illustration</text>
+                    </g>
+                    <g fill="#294e44" font-family="sans-serif" font-size="12"><text x="42" y="62">N ↑</text><text x="43"
+                            y="466">SELECTED AREA</text></g>
+                </svg>
+                <div class="map-bottom"><span><b class="key-hex"></b> Analysis boundary</span><span><b
+                            class="key-dot"></b> Illustrative population</span></div>
+            </div>
+        </section>
+        <div class="context-strip"><span>THE STARTING POINT <strong>Udaipur, Rajasthan</strong></span><span>THE METHOD
+                <strong>Geography + population data</strong></span><span>THE LONGER-TERM VISION <strong>Alappuzha,
+                    Kerala</strong></span></div>
+        <section id="overview" class="section overview">
+            <div>
+                <p class="eyebrow">01 / THE CHALLENGE</p>
+                <h2>A boundary on a map.<br>A community behind it.</h2>
+            </div>
+            <div class="section-copy">
+                <p>Flood planning needs more than a location. It needs an understanding of the people within it.
+                    Floodsafe explores how GIS and population data can make that first step easier.</p>
+                <p>The current prototype lets a user select an area, divide it into H3 hexagons, estimate its
+                    population, and export the results. It establishes a foundation for future flood-exposure analysis
+                    and evacuation planning.</p>
+                <div class="inline-note"><span>↗</span>
+                    <p><strong>Our aim</strong><br>Help planners understand potential evacuation demand before
+                        connecting that demand to routes, shelters, and resources.</p>
+                </div>
+            </div>
+        </section>
+        <section id="workflow" class="section workflow">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">02 / THE CURRENT WORKFLOW</p>
+                    <h2>From a place to a<br>population estimate.</h2>
+                </div>
+                <p>Six steps turn a selected geographic area into structured, exportable spatial data.</p>
+            </div>
+            <ol class="steps">
+                <li><span>01</span>
+                    <h3>Find a place</h3>
+                    <p>Search for a location and navigate to the relevant area on an interactive map.</p>
+                </li>
+                <li><span>02</span>
+                    <h3>Draw a boundary</h3>
+                    <p>Select a polygon or rectangle around the campus, neighborhood, or area of interest.</p>
+                </li>
+                <li><span>03</span>
+                    <h3>Divide into hexagons</h3>
+                    <p>Use H3 spatial indexing to organize the selected area into smaller analysis cells.</p>
+                </li>
+                <li><span>04</span>
+                    <h3>Estimate population</h3>
+                    <p>Use population-density data. WorldPop retrieval is intended; an assumed demo density provides an
+                        offline fallback.</p>
+                </li>
+                <li><span>05</span>
+                    <h3>Explore the map</h3>
+                    <p>Visualize estimated distribution. Population markers are illustrative, not individual people’s
+                        locations.</p>
+                </li>
+                <li><span>06</span>
+                    <h3>Export the results</h3>
+                    <p>Review the results table and download a CSV for further analysis and comparison.</p>
+                </li>
+            </ol>
+            <div class="hex-explainer"><span class="hex-symbol">⬡</span>
+                <div>
+                    <h3>Why hexagons?</h3>
+                    <p>A single total hides local differences. H3 cells give each small area a spatial identity, helping
+                        organize estimates and creating a common grid for future flood-exposure comparisons.</p>
+                </div><span class="mono">H3 / SPATIAL INDEX</span>
+            </div>
+        </section>
+        <section id="vision" class="section geography">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">03 / WHERE WE’RE HEADING</p>
+                    <h2>Start local.<br>Build toward greater scale.</h2>
+                </div>
+                <p>A campus provides a manageable testing ground. The long-term ambition is to bring these ideas to
+                    flood-prone communities.</p>
+            </div>
+            <div class="locations">
+                <article class="location">
+                    <div class="location-top"><span class="pill">CURRENT TESTING CONTEXT</span><span>01</span></div>
+                    <h3>Udaipur<span>Rajasthan, India</span></h3>
+                    <p>A selected campus area is the starting point for testing geographic selection, spatial
+                        segmentation, population estimation, and map visualization.</p>
+                    <div class="location-foot">Focus <strong>Validate the foundation</strong></div>
+                </article>
+                <article class="location future">
+                    <div class="location-top"><span class="pill">LONGER-TERM TARGET</span><span>02</span></div>
+                    <h3>Alappuzha<span>Kerala, India</span></h3>
+                    <p>A proposed setting for future flood-aware planning, bringing population estimates together with
+                        local hazard data, accessible roads, and shelter capacity.</p>
+                    <div class="location-foot">Next horizon <strong>Connect exposure to action</strong></div>
+                </article>
+            </div>
+        </section>
+        <section id="simulation" class="section media-section">
+            <div>
+                <p class="eyebrow">04 / SEE THE VISION</p>
+                <h2>A closer look at<br>the planned experience.</h2>
+                <p>The simulation will illustrate the proposed evacuation-planning workflow, from understanding exposure
+                    to coordinating assistance.</p>
+            </div>
+            <div class="video-frame">
+                <video controls preload="metadata" playsinline>
+                <source src="YOUR_VERCEL_BLOB_URL" type="video/mp4">
+                 Your browser does not support video playback.
+                </video>
+            </div>
+        </section>
+        <section id="architecture" class="section architecture">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">05 / THE SYSTEM VISION</p>
+                    <h2>Better context.<br>More informed decisions.</h2>
+                </div>
+                <p>The architecture extends beyond today’s population prototype. These capabilities are proposed and
+                    require implementation and validation.</p>
+            </div>
+            <div class="architecture-flow">
+                <article><span class="arch-num">INPUTS</span>
+                    <h3>Understand the terrain</h3>
+                    <p>Population grids, roads, shelters, elevation, historical inundation, rainfall, and water-level
+                        observations.</p>
+                    <ul>
+                        <li>Geographic and population data</li>
+                        <li>Weather and terrain context</li>
+                    </ul>
+                </article>
+                <article><span class="arch-num">ANALYSIS</span>
+                    <h3>Evaluate the options</h3>
+                    <p>Combine flood-exposure modeling with route accessibility and shelter-capacity allocation.</p>
+                    <ul>
+                        <li>Risk-aware route evaluation</li>
+                        <li>Capacity-aware allocation</li>
+                    </ul>
+                </article>
+                <article><span class="arch-num">COORDINATION</span>
+                    <h3>Support human action</h3>
+                    <p>Present suggested routes and rescue priorities to decision-makers, with human authorization for
+                        public alerts.</p>
+                    <ul>
+                        <li>Command-center decision support</li>
+                        <li>Human-approved communication</li>
+                    </ul>
+                </article>
+            </div>
+            <details>
+                <summary>Explore the proposed architecture <span>+</span></summary>
+                <div class="architecture-detail">
+                    <div>
+                        <h3>Forecast and spatial context</h3>
+                        <p>The design proposes weather ingestion, elevation and historical inundation data, and an ML
+                            model such as XGBoost. PostgreSQL with PostGIS would hold roads, shelter locations, and
+                            spatial data.</p>
+                    </div>
+                    <div>
+                        <h3>Routing and allocation</h3>
+                        <p>The proposed engine would penalize risky routes, exclude inaccessible roads, allocate shelter
+                            capacity, and place stranded locations into a rescue queue. Routing rules and thresholds
+                            would need local validation.</p>
+                    </div>
+                    <div>
+                        <h3>Communication and oversight</h3>
+                        <p>The written architecture proposes geofenced CAP messages for cell broadcast, explicitly
+                            authorized by a human official. Shelter updates and field reports would inform the planning
+                            view.</p>
+                    </div>
+                    <p class="detail-note">Design note: the supplied diagram shows an earlier SMS delivery concept. This
+                        overview follows the written architecture’s later cell-broadcast proposal. Neither communication
+                        system is represented as operational.</p>
+                </div>
+            </details>
+        </section>
+        <section id="prototype" class="prototype-section section">
+            <div>
+                <p class="eyebrow">06 / EXPLORE THE FOUNDATION</p>
+                <h2>The population<br>prototype.</h2>
+                <p>Select a boundary. Examine spatial estimates. Export the result. The prototype focuses on making
+                    population data easier to explore.</p>
+                <div class="tags">
+                    <span>Python</span><span>Streamlit</span><span>Folium</span><span>H3</span><span>Shapely</span><span>Pandas</span><span>GeoPy
+                        / OSM</span></div>
+            </div>
+            <div class="prototype-placeholder"><span class="window-dots" aria-hidden="true">● ● ●</span>
+                <div class="terminal-symbol" aria-hidden="true">⌘</div>
+                <h3>A space for the interactive prototype</h3>
+                <p>The application connection will be added here. This page does not run the population estimator yet.
+                </p><span class="pill">CONNECTION PENDING</span>
+            </div>
+        </section>
+        <section id="roadmap" class="section roadmap">
+            <div>
+                <p class="eyebrow">07 / WHAT COMES NEXT</p>
+                <h2>A foundation,<br>with a clear next chapter.</h2>
+            </div>
+            <div class="roadmap-list">
+                <article><span>01</span>
+                    <div>
+                        <h3>Validate the population pipeline</h3>
+                        <p>Test live WorldPop retrieval, evaluate coverage and resolution, and distinguish measured
+                            inputs from demo assumptions.</p>
+                    </div>
+                </article>
+                <article><span>02</span>
+                    <div>
+                        <h3>Add flood-exposure context</h3>
+                        <p>Integrate hazard maps, elevation, rainfall, and water-level information to explore which
+                            areas may be affected.</p>
+                    </div>
+                </article>
+                <article><span>03</span>
+                    <div>
+                        <h3>Connect routes and shelter capacity</h3>
+                        <p>Investigate road-network accessibility, shelter availability, and allocation constraints
+                            using validated local data.</p>
+                    </div>
+                </article>
+                <article><span>04</span>
+                    <div>
+                        <h3>Evaluate with people on the ground</h3>
+                        <p>Assess the system with relevant stakeholders before considering real-world
+                            disaster-management use.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <aside class="limitations"><span class="eyebrow">RESEARCH STATUS</span>
+            <h3>Promising direction. Important limits.</h3>
+            <p>Floodsafe is an early-stage prototype, not a validated operational evacuation system. Estimates depend on
+                data quality, coverage, and resolution. Offline mode uses assumed density. There is no validated
+                flood-depth prediction, real-time forecasting, verified evacuation routing, or live tracking of
+                evacuees. The live WorldPop integration still needs testing.</p>
+        </aside>
+    </main>
+    <footer><a class="brand" href="#">floodsafe<span class="brand-dot">.</span></a>
+        <p>Geographic insight. A foundation for safer planning.</p><a href="#main">Back to top ↑</a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
