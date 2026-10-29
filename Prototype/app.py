@@ -39,10 +39,3 @@ def plan():
 def error(e):
     app.logger.exception('Scenario request failed')
     return jsonify(error=str(e)),400
-
-if __name__=='__main__':
-    print('\nFloodsafe → http://127.0.0.1:8502\nKeep this terminal open while using the app.\n')
-    import webbrowser
-    from threading import Timer
-    Timer(1.5, lambda: webbrowser.open('http://127.0.0.1:8502')).start()
-    app.run(host='127.0.0.1',port=8502,debug=False,threaded=True)
