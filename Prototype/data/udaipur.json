@@ -1,0 +1,13 @@
+{
+  "bounds": [
+    73.693,
+    24.568,
+    73.732,
+    24.603
+  ],
+  "captured_date": "2026-10-29",
+  "source": "https://api.openstreetmap.org/api/0.6/map?bbox=73.693,24.568,73.732,24.603",
+  "attribution": "\u00a9 OpenStreetMap contributors",
+  "license": "Open Database License (ODbL) 1.0",
+  "license_url": "https://www.openstreetmap.org/copyright"
+}

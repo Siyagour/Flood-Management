@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+Prototype/.road_cache/
+cache/
+-e "\n.venv/\n__pycache__/\n.road_cache/\ntests/" 
