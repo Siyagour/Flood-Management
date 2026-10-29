@@ -1,7 +1,8 @@
-Flask>=3.0,<4
+streamlit-folium
+folium
+osmnx==2.1.1
+networkx==3.7
 h3==4.5.0
-shapely>=2,<3
-networkx>=3,<4
-osmnx>=2.0,<3
-pyproj>=3.6,<4
-requests>=2.31,<3
+shapely==2.2.0
+pyproj==3.8.0
+requests==2.34.2
